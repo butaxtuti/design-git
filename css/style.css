@@ -1,0 +1,1403 @@
+@charset "UTF-8";
+/* 文字コードの指定 */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.75;
+  color: #333;
+  background-color: #edffe7;
+}
+@media (min-width: 769px) {
+  body {
+    font-size: 1.6rem;
+  }
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+.slick-dots {
+  bottom: 1.7rem !important;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
+  width: 100%;
+  height: 6rem;
+  padding: 0 0 0 2rem;
+  background-color: #edffe7;
+  box-sizing: border-box;
+}
+@media (min-width: 769px) {
+  .header {
+    padding: 0 3rem 0 1rem;
+  }
+}
+
+.nav-button {
+  left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 6rem;
+  height: 6rem;
+  font-size: 3.1rem;
+  color: #ffd200;
+  cursor: pointer;
+}
+@media (min-width: 769px) {
+  .nav-button {
+    display: none;
+  }
+}
+
+.sp-nav {
+  position: absolute;
+  top: 6rem;
+  left: 0;
+  display: none;
+  z-index: 1000;
+  width: 100%;
+  padding: 4rem;
+  font-size: 2.4rem;
+  text-align: center;
+  background-color: #165f00;
+  border-top: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.sp-nav-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.sp-nav-list li {
+  font-family: "Roboto Condensed";
+  margin-bottom: 4rem;
+  font-weight: bold;
+}
+.sp-nav-list a {
+  color: #ffd200;
+}
+
+.pc-nav {
+  display: none;
+}
+@media (min-width: 769px) {
+  .pc-nav {
+    display: block;
+  }
+}
+.pc-nav a {
+  color: #165f00;
+}
+
+.pc-nav-list {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.pc-nav-list li {
+  font-family: "Roboto Condensed";
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0 0 0 5rem;
+}
+
+.main-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 30rem;
+  padding-top: 6rem;
+  color: #fff;
+  background-size: cover;
+  background-position: center;
+}
+@media (min-width: 769px) {
+  .main-top {
+    height: 50rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .main .main-sub {
+    max-width: 112rem;
+    margin: 0 auto;
+  }
+}
+.main .info {
+  width: 100%;
+}
+.main h2 {
+  font-family: "Roboto Condensed";
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+  padding: 0.5rem 1rem 0.5rem 3rem;
+  margin-left: 1rem;
+  color: #fff;
+  border-radius: 100vh 0 0 100vh;
+  background: #165f00;
+}
+.main h2:before {
+  position: absolute;
+  top: calc(50% - 7px);
+  left: 10px;
+  width: 14px;
+  height: 14px;
+  content: "";
+  border-radius: 50%;
+  background: #fff;
+}
+.main .view {
+  display: inline-block;
+  color: #ffd200;
+  margin: 0 2rem;
+}
+.main h3 {
+  margin-top: 3rem;
+  font-size: 1.6rem;
+}
+@media (min-width: 769px) {
+  .main .service-content {
+    display: flex;
+  }
+}
+.main .service-about .title {
+  display: flex;
+  justify-content: space-between;
+  margin: 5rem 0 2rem 0;
+}
+@media (min-width: 769px) {
+  .main .service-about .title {
+    display: inline-block;
+    justify-content: center;
+    margin: 0 0 5rem 0;
+  }
+}
+@media (min-width: 769px) {
+  .main .service-about .service-content1 {
+    display: flex;
+  }
+}
+@media (min-width: 769px) {
+  .main .service-about .service-content1 .info1 {
+    display: block;
+    margin-right: 2rem;
+    width: 50%;
+  }
+}
+.main .service-about .service-content1 .content-min {
+  width: 100%;
+  display: block;
+}
+@media (min-width: 769px) {
+  .main .service-about .service-content1 .content-min {
+    width: 50%;
+  }
+}
+.main .service-about .service-content1 .content-min h3 {
+  font-weight: 700;
+  font-family: "Roboto Condensed";
+  margin: 0 0 3rem;
+  font-size: 1.8rem;
+  color: #165f00;
+  display: block;
+}
+@media (max-width: 768px) {
+  .main .service-about .service-content1 .content-min h3 {
+    text-align: center;
+    margin: 4rem 0;
+  }
+}
+.main .service-about .service-content1 .content-min .p-content {
+  letter-spacing: 0.2rem;
+  margin: 2rem 2rem 0;
+  text-align: left;
+  font-size: 1.6rem;
+}
+@media (min-width: 769px) {
+  .main .service-about .service-content1 .content-min .p-content {
+    width: 100%;
+    margin: 0;
+    display: block;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    line-height: 2;
+  }
+}
+@media (min-width: 769px) {
+  .main .service-about .service-content2 {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+@media (min-width: 769px) {
+  .main .service-about .service-content2 .info1 {
+    display: block;
+    margin-left: 2rem;
+    width: 50%;
+  }
+}
+.main .service-about .service-content2 .content-min {
+  width: 100%;
+  display: block;
+}
+@media (min-width: 769px) {
+  .main .service-about .service-content2 .content-min {
+    width: 50%;
+  }
+}
+.main .service-about .service-content2 .content-min h3 {
+  font-weight: 700;
+  font-family: "Roboto Condensed";
+  margin: 0 0 3rem;
+  font-size: 1.8rem;
+  color: #165f00;
+  display: block;
+}
+@media (max-width: 768px) {
+  .main .service-about .service-content2 .content-min h3 {
+    margin: 4rem 0;
+    text-align: center;
+  }
+}
+.main .service-about .service-content2 .content-min .p-content {
+  margin: 2rem 2rem 0;
+  text-align: left;
+  font-size: 1.6rem;
+}
+@media (min-width: 769px) {
+  .main .service-about .service-content2 .content-min .p-content {
+    font-family: 1rem;
+    width: 100%;
+    margin: 0;
+    display: block;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    line-height: 2;
+  }
+}
+.main .知床 {
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
+.main .白神山地 {
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
+.main .小笠原諸島 {
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
+.main .屋久島 {
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
+.main .奄美大島、徳之島、沖縄島北部及び西表島 {
+  padding-top: 4rem;
+  padding-bottom: 7rem;
+}
+
+@media (min-width: 769px) {
+  .about {
+    max-width: 112rem;
+    margin: 0 auto;
+  }
+}
+.about .p-content {
+  margin: 2rem 2rem 0;
+  text-align: left;
+  font-size: 1.6rem;
+  line-height: 1.7;
+}
+@media (min-width: 769px) {
+  .about .p-content {
+    margin: 5rem 0 0 0;
+    padding: 0;
+    width: 50%;
+    display: block;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.about .p-content p {
+  display: none;
+}
+.about .p-content p:first-child {
+  display: block;
+}
+@media (min-width: 769px) {
+  .about .p-content p:first-child {
+    margin-top: 0;
+  }
+}
+@media (min-width: 769px) {
+  .about .p-content p {
+    display: block;
+    margin: 0.7rem 0 0 0;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 769px) {
+  .service-content {
+    display: flex;
+  }
+}
+@media (min-width: 769px) and (min-width: 769px) {
+  .service-content .info {
+    margin-right: 2rem;
+  }
+}
+
+.cover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 6rem;
+  color: #fff;
+}
+
+.cover-title {
+  font-family: "Roboto Condensed";
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0 0.5rem;
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+@media (min-width: 769px) {
+  .cover-title {
+    font-size: 4.2rem;
+  }
+}
+
+.cover-discription {
+  font-family: "Roboto Condensed";
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+@media (min-width: 769px) {
+  .cover-discription {
+    font-size: 3rem;
+  }
+}
+
+.carousel {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+@media (min-width: 769px) {
+  .carousel img {
+    width: 100%;
+  }
+}
+
+.carousel-content {
+  display: block;
+  position: absolute;
+  z-index: 2;
+}
+
+.main-知床 .cover-s {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 30rem;
+  padding-top: 6rem;
+  color: #fff;
+  background-image: url("../images/知床.jpg");
+  background-size: cover;
+  background-position: center;
+}
+@media (min-width: 769px) {
+  .main-知床 .cover-s {
+    height: 50rem;
+  }
+}
+.main-知床 .cover-s h1 {
+  font-family: "Roboto Condensed";
+  font-size: 3.2rem;
+}
+@media (min-width: 769px) {
+  .main-知床 .cover-s h1 {
+    font-size: 4.2rem;
+  }
+}
+@media (min-width: 769px) {
+  .main-知床 .main-sub {
+    max-width: 112rem;
+    margin: 0 auto;
+  }
+}
+.main-知床 .main-sub h2 {
+  font-family: "Roboto Condensed";
+  font-size: 2.8rem;
+  color: #165f00;
+  text-align: center;
+  margin: 5rem 0;
+}
+@media (min-width: 769px) {
+  .main-知床 .main-sub h2 {
+    font-size: 3.6rem;
+    margin: 7rem 0;
+  }
+}
+.main-知床 .main-sub .box-s {
+  display: block;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.main-知床 .main-sub .box-s .box-s1 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+.main-知床 .main-sub .box-s .box-s2 {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+.main-知床 .main-sub img {
+  width: 30%;
+  display: inline-block;
+}
+@media (min-width: 769px) {
+  .main-知床 .main-sub img {
+    height: 25rem;
+  }
+}
+.main-知床 .main-sub .content-p {
+  margin: 7rem 0;
+}
+@media (min-width: 769px) {
+  .main-知床 .main-sub .content-p {
+    margin: 10rem 0;
+  }
+}
+.main-知床 .main-sub .content-p p {
+  font-size: 1.4rem;
+  max-width: 32rem;
+  letter-spacing: 0.2rem;
+  margin: 0 auto;
+  line-height: 2;
+}
+@media (min-width: 769px) {
+  .main-知床 .main-sub .content-p p {
+    font-size: 1.6rem;
+    max-width: 56rem;
+  }
+}
+.main-知床 .main-sub .box-sub {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 112rem;
+  padding: 0 0 7rem;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+@media (min-width: 769px) {
+  .main-知床 .main-sub .box-sub {
+    flex-wrap: nowrap;
+    padding-bottom: 10rem;
+  }
+}
+.main-知床 .main-sub .box-sub img {
+  width: 100%;
+  height: 15rem;
+}
+@media (min-width: 769px) {
+  .main-知床 .main-sub .box-sub img {
+    height: 20rem;
+  }
+}
+.main-知床 .main-sub .box-sub .box-sub1 {
+  margin: 1rem 1rem 1rem 2rem;
+  display: inline-block;
+  box-sizing: border-box;
+  width: calc((100% - 6rem) / 2);
+  background-color: #fff;
+  box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 769px) {
+  .main-知床 .main-sub .box-sub .box-sub1 {
+    margin: 0 1rem 2rem 0;
+  }
+}
+.main-知床 .main-sub .box-sub .box-sub2 {
+  margin: 1rem 2rem 1rem 1rem;
+  display: inline-block;
+  box-sizing: border-box;
+  width: calc((100% - 6rem) / 2);
+  background-color: #fff;
+  box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 769px) {
+  .main-知床 .main-sub .box-sub .box-sub2 {
+    margin: 0 1rem 2rem 1rem;
+  }
+}
+.main-知床 .main-sub .box-sub .box-sub3 {
+  margin: 1rem 1rem 1rem 2rem;
+  display: inline-block;
+  box-sizing: border-box;
+  width: calc((100% - 6rem) / 2);
+  background-color: #fff;
+  box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 769px) {
+  .main-知床 .main-sub .box-sub .box-sub3 {
+    margin: 0 1rem 2rem 1rem;
+  }
+}
+.main-知床 .main-sub .box-sub .box-sub4 {
+  margin: 1rem 2rem 1rem 1rem;
+  display: inline-block;
+  box-sizing: border-box;
+  width: calc((100% - 6rem) / 2);
+  background-color: #fff;
+  box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 769px) {
+  .main-知床 .main-sub .box-sub .box-sub4 {
+    margin: 0 0 2rem 1rem;
+  }
+}
+.main-知床 .main-sub .box-sub h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #999;
+  margin: 1.6rem 0 0 1.6rem;
+}
+@media (min-width: 769px) {
+  .main-知床 .main-sub .box-sub h3 {
+    font-size: 1.4rem;
+    margin: 1.6rem 0 0 1.6rem;
+    padding: 0;
+  }
+}
+.main-知床 .main-sub .box-sub p {
+  font-size: 1.4rem;
+  margin: 0 1.6rem 1.6rem 1.6rem;
+}
+@media (min-width: 769px) {
+  .main-知床 .main-sub .box-sub p {
+    font-size: 1.6rem;
+    padding: 0;
+  }
+}
+
+.main-白神 .cover-r {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 30rem;
+  padding-top: 6rem;
+  color: #fff;
+  background-image: url("../images/白神山地.jpg");
+  background-size: cover;
+  background-position: center;
+}
+@media (min-width: 769px) {
+  .main-白神 .cover-r {
+    height: 50rem;
+  }
+}
+.main-白神 .cover-r h1 {
+  font-family: "Roboto Condensed";
+  font-size: 3.2rem;
+}
+@media (min-width: 769px) {
+  .main-白神 .cover-r h1 {
+    font-size: 4.2rem;
+  }
+}
+@media (min-width: 769px) {
+  .main-白神 .main-sub {
+    max-width: 112rem;
+    margin: 0 auto;
+  }
+}
+.main-白神 .main-sub h2 {
+  font-family: "Roboto Condensed";
+  font-size: 2.8rem;
+  color: #165f00;
+  text-align: center;
+  margin: 5rem;
+}
+@media (min-width: 769px) {
+  .main-白神 .main-sub h2 {
+    font-size: 3.6rem;
+    margin: 7rem 0;
+  }
+}
+.main-白神 .main-sub .box-s {
+  display: block;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.main-白神 .main-sub .box-s .box-s1 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+.main-白神 .main-sub .box-s .box-s2 {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+.main-白神 .main-sub img {
+  width: 30%;
+  display: inline-block;
+}
+@media (min-width: 769px) {
+  .main-白神 .main-sub img {
+    height: 25rem;
+  }
+}
+.main-白神 .main-sub .content-p {
+  margin: 7rem 0;
+}
+@media (min-width: 769px) {
+  .main-白神 .main-sub .content-p {
+    margin: 10rem 0;
+  }
+}
+.main-白神 .main-sub .content-p p {
+  font-size: 1.4rem;
+  max-width: 32rem;
+  letter-spacing: 0.2rem;
+  margin: 0 auto;
+  line-height: 2;
+}
+@media (min-width: 769px) {
+  .main-白神 .main-sub .content-p p {
+    font-size: 1.6rem;
+    max-width: 56rem;
+  }
+}
+.main-白神 .main-sub .box-sub {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 112rem;
+  padding: 0 0 7rem;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+@media (min-width: 769px) {
+  .main-白神 .main-sub .box-sub {
+    flex-wrap: nowrap;
+    padding-bottom: 10rem;
+  }
+}
+.main-白神 .main-sub .box-sub img {
+  width: 100%;
+  height: 15rem;
+}
+@media (min-width: 769px) {
+  .main-白神 .main-sub .box-sub img {
+    height: 20rem;
+  }
+}
+.main-白神 .main-sub .box-sub .box-sub1 {
+  margin: 1rem 1rem 1rem 2rem;
+  display: inline-block;
+  box-sizing: border-box;
+  width: calc((100% - 6rem) / 2);
+  background-color: #fff;
+  box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 769px) {
+  .main-白神 .main-sub .box-sub .box-sub1 {
+    margin: 0 1rem 2rem 0;
+  }
+}
+.main-白神 .main-sub .box-sub .box-sub2 {
+  margin: 1rem 2rem 1rem 1rem;
+  display: inline-block;
+  box-sizing: border-box;
+  width: calc((100% - 6rem) / 2);
+  background-color: #fff;
+  box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 769px) {
+  .main-白神 .main-sub .box-sub .box-sub2 {
+    margin: 0 1rem 2rem 1rem;
+  }
+}
+.main-白神 .main-sub .box-sub .box-sub3 {
+  margin: 1rem 1rem 1rem 2rem;
+  display: inline-block;
+  box-sizing: border-box;
+  width: calc((100% - 6rem) / 2);
+  background-color: #fff;
+  box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 769px) {
+  .main-白神 .main-sub .box-sub .box-sub3 {
+    margin: 0 1rem 2rem 1rem;
+  }
+}
+.main-白神 .main-sub .box-sub .box-sub4 {
+  margin: 1rem 2rem 1rem 1rem;
+  display: inline-block;
+  box-sizing: border-box;
+  width: calc((100% - 6rem) / 2);
+  background-color: #fff;
+  box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 769px) {
+  .main-白神 .main-sub .box-sub .box-sub4 {
+    margin: 0 0 2rem 1rem;
+  }
+}
+.main-白神 .main-sub .box-sub h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #999;
+  margin: 1.6rem 0 0 1.6rem;
+}
+@media (min-width: 769px) {
+  .main-白神 .main-sub .box-sub h3 {
+    font-size: 1.4rem;
+    margin: 1.6rem 0 0 1.6rem;
+    padding: 0;
+  }
+}
+.main-白神 .main-sub .box-sub p {
+  font-size: 1.4rem;
+  margin: 0 1.6rem 1.6rem 1.6rem;
+}
+@media (min-width: 769px) {
+  .main-白神 .main-sub .box-sub p {
+    font-size: 1.6rem;
+    padding: 0;
+  }
+}
+
+.main-小笠原 .cover-o {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 30rem;
+  padding-top: 6rem;
+  color: #fff;
+  background-image: url("../images/小笠原諸島.jpg");
+  background-size: cover;
+  background-position: center;
+}
+@media (min-width: 769px) {
+  .main-小笠原 .cover-o {
+    height: 50rem;
+  }
+}
+.main-小笠原 .cover-o h1 {
+  font-family: "Roboto Condensed";
+  font-size: 3.2rem;
+}
+@media (min-width: 769px) {
+  .main-小笠原 .cover-o h1 {
+    font-size: 4.2rem;
+  }
+}
+@media (min-width: 769px) {
+  .main-小笠原 .main-sub {
+    max-width: 112rem;
+    margin: 0 auto;
+  }
+}
+.main-小笠原 .main-sub h2 {
+  font-family: "Roboto Condensed";
+  font-size: 2.8rem;
+  color: #165f00;
+  text-align: center;
+  margin: 5rem 0;
+}
+@media (min-width: 769px) {
+  .main-小笠原 .main-sub h2 {
+    font-size: 3.6rem;
+    margin: 7rem 0;
+  }
+}
+.main-小笠原 .main-sub .box-s {
+  display: block;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.main-小笠原 .main-sub .box-s .box-s1 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+.main-小笠原 .main-sub .box-s .box-s2 {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+.main-小笠原 .main-sub img {
+  width: 30%;
+  display: inline-block;
+}
+@media (min-width: 769px) {
+  .main-小笠原 .main-sub img {
+    height: 25rem;
+  }
+}
+.main-小笠原 .main-sub .content-p {
+  margin: 7rem 0;
+}
+@media (min-width: 769px) {
+  .main-小笠原 .main-sub .content-p {
+    margin: 10rem 0;
+  }
+}
+.main-小笠原 .main-sub .content-p p {
+  font-size: 1.4rem;
+  max-width: 32rem;
+  letter-spacing: 0.2rem;
+  margin: 0 auto;
+  line-height: 2;
+}
+@media (min-width: 769px) {
+  .main-小笠原 .main-sub .content-p p {
+    font-size: 1.6rem;
+    max-width: 56rem;
+  }
+}
+.main-小笠原 .main-sub .box-sub {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 112rem;
+  padding: 0 0 7rem;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+@media (min-width: 769px) {
+  .main-小笠原 .main-sub .box-sub {
+    flex-wrap: nowrap;
+    padding-top: 10rem;
+  }
+}
+.main-小笠原 .main-sub .box-sub img {
+  width: 100%;
+  height: 15rem;
+}
+@media (min-width: 769px) {
+  .main-小笠原 .main-sub .box-sub img {
+    height: 20rem;
+  }
+}
+.main-小笠原 .main-sub .box-sub .box-sub1 {
+  margin: 1rem 1rem 1rem 2rem;
+  display: inline-block;
+  box-sizing: border-box;
+  width: calc((100% - 6rem) / 2);
+  background-color: #fff;
+  box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 769px) {
+  .main-小笠原 .main-sub .box-sub .box-sub1 {
+    margin: 0 1rem 2rem 0;
+  }
+}
+.main-小笠原 .main-sub .box-sub .box-sub2 {
+  margin: 1rem 2rem 1rem 1rem;
+  display: inline-block;
+  box-sizing: border-box;
+  width: calc((100% - 6rem) / 2);
+  background-color: #fff;
+  box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 769px) {
+  .main-小笠原 .main-sub .box-sub .box-sub2 {
+    margin: 0 1rem 2rem 1rem;
+  }
+}
+.main-小笠原 .main-sub .box-sub .box-sub3 {
+  margin: 1rem 1rem 1rem 2rem;
+  display: inline-block;
+  box-sizing: border-box;
+  width: calc((100% - 6rem) / 2);
+  background-color: #fff;
+  box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 769px) {
+  .main-小笠原 .main-sub .box-sub .box-sub3 {
+    margin: 0 1rem 2rem 1rem;
+  }
+}
+.main-小笠原 .main-sub .box-sub .box-sub4 {
+  margin: 1rem 2rem 1rem 1rem;
+  display: inline-block;
+  box-sizing: border-box;
+  width: calc((100% - 6rem) / 2);
+  background-color: #fff;
+  box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 769px) {
+  .main-小笠原 .main-sub .box-sub .box-sub4 {
+    margin: 0 0 2rem 1rem;
+  }
+}
+.main-小笠原 .main-sub .box-sub h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #999;
+  margin: 1.6rem 0 0 1.6rem;
+}
+@media (min-width: 769px) {
+  .main-小笠原 .main-sub .box-sub h3 {
+    font-size: 1.4rem;
+    margin: 1.6rem 0 0 1.6rem;
+    padding: 0;
+  }
+}
+.main-小笠原 .main-sub .box-sub p {
+  font-size: 1.4rem;
+  margin: 0 1.6rem 1.6rem 1.6rem;
+}
+@media (min-width: 769px) {
+  .main-小笠原 .main-sub .box-sub p {
+    font-size: 1.6rem;
+    padding: 0;
+  }
+}
+
+.main-屋久島 .cover-y {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 30rem;
+  padding-top: 6rem;
+  color: #fff;
+  background-image: url("../images/屋久島.jpg");
+  background-size: cover;
+  background-position: center;
+}
+@media (min-width: 769px) {
+  .main-屋久島 .cover-y {
+    height: 50rem;
+  }
+}
+.main-屋久島 .cover-y h1 {
+  font-family: "Roboto Condensed";
+  font-size: 3.2rem;
+}
+@media (min-width: 769px) {
+  .main-屋久島 .cover-y h1 {
+    font-size: 4.2rem;
+  }
+}
+@media (min-width: 769px) {
+  .main-屋久島 .main-sub {
+    max-width: 112rem;
+    margin: 0 auto;
+  }
+}
+.main-屋久島 .main-sub h2 {
+  font-family: "Roboto Condensed";
+  font-size: 2.8rem;
+  color: #165f00;
+  text-align: center;
+  margin: 5rem 0;
+}
+@media (min-width: 769px) {
+  .main-屋久島 .main-sub h2 {
+    font-size: 3.6rem;
+    margin: 7rem 0;
+  }
+}
+.main-屋久島 .main-sub .box-s {
+  display: block;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.main-屋久島 .main-sub .box-s .box-s1 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+.main-屋久島 .main-sub .box-s .box-s2 {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+.main-屋久島 .main-sub img {
+  width: 30%;
+  display: inline-block;
+}
+@media (min-width: 769px) {
+  .main-屋久島 .main-sub img {
+    height: 25rem;
+  }
+}
+.main-屋久島 .main-sub .content-p {
+  margin: 7rem 0;
+}
+@media (min-width: 769px) {
+  .main-屋久島 .main-sub .content-p {
+    margin: 10rem 0;
+  }
+}
+.main-屋久島 .main-sub .content-p p {
+  font-size: 1.4rem;
+  max-width: 32rem;
+  letter-spacing: 0.2rem;
+  margin: 0 auto;
+  line-height: 2;
+}
+@media (min-width: 769px) {
+  .main-屋久島 .main-sub .content-p p {
+    font-size: 1.6rem;
+    max-width: 56rem;
+  }
+}
+.main-屋久島 .main-sub .box-sub {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 112rem;
+  padding: 0 0 7rem;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+@media (min-width: 769px) {
+  .main-屋久島 .main-sub .box-sub {
+    flex-wrap: nowrap;
+    padding-top: 10rem;
+  }
+}
+.main-屋久島 .main-sub .box-sub img {
+  width: 100%;
+  height: 15rem;
+}
+@media (min-width: 769px) {
+  .main-屋久島 .main-sub .box-sub img {
+    height: 20rem;
+  }
+}
+.main-屋久島 .main-sub .box-sub .box-sub1 {
+  margin: 1rem 1rem 1rem 2rem;
+  display: inline-block;
+  box-sizing: border-box;
+  width: calc((100% - 6rem) / 2);
+  background-color: #fff;
+  box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 769px) {
+  .main-屋久島 .main-sub .box-sub .box-sub1 {
+    margin: 0 1rem 2rem 0;
+  }
+}
+.main-屋久島 .main-sub .box-sub .box-sub2 {
+  margin: 1rem 2rem 1rem 1rem;
+  display: inline-block;
+  box-sizing: border-box;
+  width: calc((100% - 6rem) / 2);
+  background-color: #fff;
+  box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 769px) {
+  .main-屋久島 .main-sub .box-sub .box-sub2 {
+    margin: 0 1rem 2rem 1rem;
+  }
+}
+.main-屋久島 .main-sub .box-sub .box-sub3 {
+  margin: 1rem 1rem 1rem 2rem;
+  display: inline-block;
+  box-sizing: border-box;
+  width: calc((100% - 6rem) / 2);
+  background-color: #fff;
+  box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 769px) {
+  .main-屋久島 .main-sub .box-sub .box-sub3 {
+    margin: 0 1rem 2rem 1rem;
+  }
+}
+.main-屋久島 .main-sub .box-sub .box-sub4 {
+  margin: 1rem 2rem 1rem 1rem;
+  display: inline-block;
+  box-sizing: border-box;
+  width: calc((100% - 6rem) / 2);
+  background-color: #fff;
+  box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 769px) {
+  .main-屋久島 .main-sub .box-sub .box-sub4 {
+    margin: 0 0 2rem 1rem;
+  }
+}
+.main-屋久島 .main-sub .box-sub h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #999;
+  margin: 1.6rem 0 0 1.6rem;
+}
+@media (min-width: 769px) {
+  .main-屋久島 .main-sub .box-sub h3 {
+    font-size: 1.4rem;
+    margin: 1.6rem 0 0 1.6rem;
+    padding: 0;
+  }
+}
+.main-屋久島 .main-sub .box-sub p {
+  font-size: 1.4rem;
+  margin: 0 1.6rem 1.6rem 1.6rem;
+}
+@media (min-width: 769px) {
+  .main-屋久島 .main-sub .box-sub p {
+    font-size: 1.6rem;
+    padding: 0;
+  }
+}
+
+.main-奄美 .cover-a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 30rem;
+  padding-top: 6rem;
+  color: #fff;
+  background-image: url("../images/奄美大島、徳之島、沖縄島北部及び西表島.jpg");
+  background-size: cover;
+  background-position: center;
+}
+@media (min-width: 769px) {
+  .main-奄美 .cover-a {
+    height: 50rem;
+  }
+}
+.main-奄美 .cover-a h1 {
+  font-family: "Roboto Condensed";
+  font-size: 3.2rem;
+}
+@media (min-width: 769px) {
+  .main-奄美 .cover-a h1 {
+    font-size: 4.2rem;
+  }
+}
+@media (min-width: 769px) {
+  .main-奄美 .main-sub {
+    max-width: 112rem;
+    margin: 0 auto;
+  }
+}
+.main-奄美 .main-sub h2 {
+  font-family: "Roboto Condensed";
+  font-size: 2.8rem;
+  color: #165f00;
+  text-align: center;
+  margin: 5rem 0;
+}
+@media (min-width: 769px) {
+  .main-奄美 .main-sub h2 {
+    font-size: 3.6rem;
+    margin: 7rem 0;
+  }
+}
+.main-奄美 .main-sub .box-s {
+  display: block;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.main-奄美 .main-sub .box-s .box-s1 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+.main-奄美 .main-sub .box-s .box-s2 {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+.main-奄美 .main-sub img {
+  width: 30%;
+  display: inline-block;
+}
+@media (min-width: 769px) {
+  .main-奄美 .main-sub img {
+    height: 25rem;
+  }
+}
+.main-奄美 .main-sub .content-p {
+  margin: 7rem 0;
+}
+@media (min-width: 769px) {
+  .main-奄美 .main-sub .content-p {
+    margin: 10rem 0;
+  }
+}
+.main-奄美 .main-sub .content-p p {
+  font-size: 1.4rem;
+  max-width: 32rem;
+  letter-spacing: 0.2rem;
+  margin: 0 auto;
+  line-height: 2;
+}
+@media (min-width: 769px) {
+  .main-奄美 .main-sub .content-p p {
+    font-size: 1.6rem;
+    max-width: 56rem;
+  }
+}
+.main-奄美 .main-sub .box-sub {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 112rem;
+  padding: 0 0 7rem;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+@media (min-width: 769px) {
+  .main-奄美 .main-sub .box-sub {
+    flex-wrap: nowrap;
+    padding-top: 10rem;
+  }
+}
+.main-奄美 .main-sub .box-sub img {
+  width: 100%;
+  height: 15rem;
+}
+@media (min-width: 769px) {
+  .main-奄美 .main-sub .box-sub img {
+    height: 20rem;
+  }
+}
+.main-奄美 .main-sub .box-sub .box-sub1 {
+  margin: 1rem 1rem 1rem 2rem;
+  display: inline-block;
+  box-sizing: border-box;
+  width: calc((100% - 6rem) / 2);
+  background-color: #fff;
+  box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 769px) {
+  .main-奄美 .main-sub .box-sub .box-sub1 {
+    margin: 0 1rem 2rem 0;
+  }
+}
+.main-奄美 .main-sub .box-sub .box-sub2 {
+  margin: 1rem 2rem 1rem 1rem;
+  display: inline-block;
+  box-sizing: border-box;
+  width: calc((100% - 6rem) / 2);
+  background-color: #fff;
+  box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 769px) {
+  .main-奄美 .main-sub .box-sub .box-sub2 {
+    margin: 0 1rem 2rem 1rem;
+  }
+}
+.main-奄美 .main-sub .box-sub .box-sub3 {
+  margin: 1rem 1rem 1rem 2rem;
+  display: inline-block;
+  box-sizing: border-box;
+  width: calc((100% - 6rem) / 2);
+  background-color: #fff;
+  box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 769px) {
+  .main-奄美 .main-sub .box-sub .box-sub3 {
+    margin: 0 1rem 2rem 1rem;
+  }
+}
+.main-奄美 .main-sub .box-sub .box-sub4 {
+  margin: 1rem 2rem 1rem 1rem;
+  display: inline-block;
+  box-sizing: border-box;
+  width: calc((100% - 6rem) / 2);
+  background-color: #fff;
+  box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 769px) {
+  .main-奄美 .main-sub .box-sub .box-sub4 {
+    margin: 0 0 2rem 1rem;
+  }
+}
+.main-奄美 .main-sub .box-sub h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #999;
+  margin: 1.6rem 0 0 1.6rem;
+}
+@media (min-width: 769px) {
+  .main-奄美 .main-sub .box-sub h3 {
+    font-size: 1.4rem;
+    margin: 1.6rem 0 0 1.6rem;
+    padding: 0;
+  }
+}
+.main-奄美 .main-sub .box-sub p {
+  font-size: 1.4rem;
+  margin: 0 1.6rem 1.6rem 1.6rem;
+}
+@media (min-width: 769px) {
+  .main-奄美 .main-sub .box-sub p {
+    font-size: 1.6rem;
+    padding: 0;
+  }
+}
+
+footer {
+  padding: 2rem 0;
+  text-align: center;
+  background-color: #edffe7;
+}
+footer small {
+  color: #165f00;
+  font-size: 1.2rem;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,56 @@
+.cover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 6rem;
+    color: $white;
+}
+
+
+.cover-title {
+    font-family: 'Roboto Condensed';
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0 0.5rem;
+    font-size: 3.2rem;
+    font-weight: 700;
+    @media (min-width: 769px) {
+        font-size: 4.2rem;
+    }
+}
+
+.cover-discription {
+    font-family: 'Roboto Condensed';
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    font-size: 2.4rem;
+    font-weight: 700;
+    @media (min-width: 769px) {
+        font-size: 3.0rem;
+    }
+}
+
+.carousel  {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    img {
+         @media (min-width: 769px) {
+             width: 100%;
+         }
+    }
+    
+}
+
+.carousel-content {
+    display: block;
+    position: absolute;
+    z-index: 2;
+}
+

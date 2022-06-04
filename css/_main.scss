@@ -1,0 +1,248 @@
+.main-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 30rem;
+    padding-top: 6rem;
+    color: $white;
+    background-size: cover;
+    background-position: center;
+    @media (min-width: 769px) { // 追加
+        height: 50rem; // 追加
+    } // 追加
+}
+
+
+
+.main {
+    .main-sub {
+        @media (min-width: 769px) {
+            max-width: 112rem;
+            margin: 0 auto;
+        }
+    }
+    .info {
+        width: 100%;
+    }
+    h2 {
+        font-family: 'Roboto Condensed';
+        font-weight: 700;
+        position: relative;
+        display: inline-block;
+        padding: 0.5rem 1rem 0.5rem 3rem;
+        margin-left: 1rem;
+        color: $white;
+        border-radius: 100vh 0 0 100vh;
+        background: $green1;
+        
+        &:before {
+            position: absolute;
+            top: calc(50% - 7px);
+            left: 10px;
+            width: 14px;
+            height: 14px;
+            content: '';
+            border-radius: 50%;
+          background: #fff;
+        }
+    }
+    .view {
+        display: inline-block;
+        color: $yellow;
+        margin: 0 2rem;
+        
+    }
+    h3 {
+        margin-top: 3rem;
+        font-size: 1.6rem;
+    }
+    .service-content {
+        @media (min-width: 769px) {
+        display: flex;
+        }
+    }
+    .service-about {
+        .title {
+            display: flex;
+            justify-content: space-between;
+            margin: 5rem 0 2rem 0;
+            @media (min-width: 769px) {
+                display: inline-block;
+                justify-content: center;
+                margin: 0 0 5rem 0;
+            }
+            
+        }
+        .service-content1 {
+            @media (min-width: 769px) {
+                display: flex;
+            }
+            .info1 {
+                @media (min-width: 769px) {
+                    display: block;
+                    margin-right: 2rem;
+                    width: 50%;
+                }
+            }
+            .content-min {
+                width: 100%;
+                display: block;
+                @media (min-width: 769px) {
+                    width: 50%;
+                }
+                h3 {
+                    font-weight: 700;
+                    font-family: 'Roboto Condensed';
+                    margin: 0 0 3rem;
+                    font-size: 1.8rem;
+                    color: $green1;
+                    display: block;
+                    @media (max-width: 768px) {
+                        text-align: center;
+                        margin: 4rem 0;
+                    }
+                }
+                .p-content {
+                    letter-spacing: 0.2rem;
+                    margin: 2rem 2rem 0;
+                    text-align: left;
+                    font-size: 1.6rem;
+                    @media (min-width: 769px) {
+                        width: 100%;
+                        margin: 0;
+                        display: block;
+                        vertical-align: middle;
+                        justify-content: center;
+                        align-items: center;
+                        line-height: 2;
+                    }
+                }
+            }
+        }
+        
+        .service-content2 {
+            @media (min-width: 769px) {
+                display: flex;
+                flex-direction: row-reverse;
+            }
+            .info1 {
+                @media (min-width: 769px) {
+                    display: block;
+                    margin-left: 2rem;
+                    width: 50%;
+                }
+            }
+            .content-min {
+                width: 100%;
+                display: block;
+                @media (min-width: 769px) {
+                    width: 50%;
+                }
+                h3 {
+                    font-weight: 700;
+                    font-family: 'Roboto Condensed';
+                    margin: 0 0 3rem;
+                    font-size: 1.8rem;
+                    color: $green1;
+                    display: block;
+                    @media (max-width: 768px) {
+                        margin: 4rem 0;
+                        text-align: center;
+                    }
+                }
+                .p-content {
+                    margin: 2rem 2rem 0;
+                    text-align: left;
+                    font-size: 1.6rem;
+                    @media (min-width: 769px) {
+                        font-family: 1rem;
+                        width: 100%;
+                        margin: 0;
+                        display: block;
+                        vertical-align: middle;
+                        justify-content: center;
+                        align-items: center;
+                        line-height: 2;
+                    }
+                }
+            }
+        }
+    }
+    .知床 {
+        padding-top: 4rem;
+        padding-bottom: 2rem;
+            }
+    .白神山地 {
+        padding-top: 4rem;
+        padding-bottom: 2rem;
+    }
+    .小笠原諸島 {
+        padding-top: 4rem;
+        padding-bottom: 2rem;
+    }
+    .屋久島 {
+        padding-top: 4rem;
+        padding-bottom: 2rem;
+    }
+    .奄美大島、徳之島、沖縄島北部及び西表島 {
+        padding-top: 4rem;
+        padding-bottom: 7rem;
+    }
+}
+
+
+
+
+.about {
+    
+    @media (min-width: 769px) {
+        max-width: 112rem;
+        margin: 0 auto;
+    }
+    .p-content {
+       margin: 2rem 2rem 0;
+        text-align: left;
+        font-size: 1.6rem;
+        line-height: 1.7;
+        @media (min-width: 769px) {
+            margin: 5rem 0 0 0;
+            padding: 0;
+            width: 50%;
+            display: block;
+            vertical-align: middle;
+            justify-content: center;
+            align-items: center;
+        }
+        p {
+            display: none;
+            &:first-child {
+                display: block;
+                @media (min-width: 769px) {
+                    margin-top: 0;
+                }
+            }
+            @media (min-width: 769px) {
+                display: block;
+                margin: 0.7rem 0 0 0;
+                align-items: center;
+                vertical-align: middle;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+.service-content {
+    @media (min-width: 769px) {
+        display: flex;
+        .info {
+            @media (min-width: 769px) {
+                margin-right: 2rem;
+            }
+        }
+    }
+    
+}
+
+
